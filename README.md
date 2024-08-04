@@ -7,4 +7,4 @@ Here are some the resourses I found helpull in my certification journey.
 | HCIA Security Exam Practice Questions        | Practice questions for the HCIA Security exam | [HCIA Security Exam Practice Questions](https://techhyme.com/hcia-security-practice-test-questions-with-answers) |
 | HCIA Security Exam Guide - YouTube           | Video guide to prepare for the HCIA Security exam | [HCIA Security Exam Guide - YouTube](https://www.youtube.com/watch?v=5A8WXW0sfpU) |
 | HCIA Security Certification Exam Dumps       | Latest exam dumps and practice exams | [HCIA Security Certification Exam Dumps](https://www.pass4sure.com/) |
-| HCIA Security Official Documentation         | Official documentation and resources from Huawei | [HCIA Security Official Documentation](https://support.huawei.com/enterprise/en/hcia-security-v3.0-training-materials) |
+| HCIA Security Official Documentation        | Official documentation and resources from Huawei | [HCIA Security Official Documentation](https://support.huawei.com/enterprise/en/hcia-security-v3.0-training-materials) |
