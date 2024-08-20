@@ -171,3 +171,178 @@
     The Local zone, provided by the firewall, represents the firewall itself. This zone is used for handling packets that need to be responded to and processed by the firewall, rather than forwarded. Due to its unique role, security policies between the local zone and itself often need to be configured for applications requiring the device to send and receive packets.
     </details>
 
+13. Which of the following zones is not the default security zone of the firewall?
+
+    A. Trust  
+    B. DMZ  
+    C. Untrust  
+    D. ISP
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** D
+
+    **Answer Analysis:**  
+    The default security zones of Huawei firewalls are Local, Trust, DMZ, and Untrust. The ISP zone is not a default security zone for these firewalls.
+    </details>
+14. The basic design principle of the firewall is that the traffic that is not explicitly permitted is allowed by default.
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    The basic design principle of a firewall is that traffic not explicitly allowed is discarded by default. This principle ensures that only permitted traffic is allowed through, thus protecting the network from unauthorized access and potential threats.
+    </details>
+
+15. On Huawei firewalls, each security zone has a unique priority. The default priority of the Trust zone is 50.
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    On Huawei firewalls, the default priority of the Trust zone is 85, not 50. The DMZ zone has the default priority of 50. This priority system helps determine the level of trust assigned to different zones within the firewall configuration.
+    </details>
+
+16. Which of the following NAT is applicable to the scenario where users access private servers through public addresses?
+
+    A. NAT NO-PAT  
+    B. NAPT  
+    C. Easy IP  
+    D. NAT Server
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** D
+
+    **Answer Analysis:**  
+    NAT Server, also called static mapping, translates the destination IP address of a packet. It provides the mapping between public and private IP addresses and translates the public IP address in the packet into the corresponding private IP address.
+    </details>
+
+17. Which of the following options is a private IP address?
+
+    A. 1.1.1.1  
+    B. 10.1.1.1  
+    C. 100.1.1.1  
+    D. 200.1.1.1
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+
+    **Answer Analysis:**  
+    Private IP addresses are reserved for use within private networks and are not routable on the public internet. The ranges for private IP addresses are:
+    - **Class A:** 10.0.0.0 to 10.255.255.255
+    - **Class B:** 172.16.0.0 to 172.31.255.255
+    - **Class C:** 192.168.0.0 to 192.168.255.255
+    
+    Therefore, the IP address **10.1.1.1** falls within the private range specified for Class A.
+    </details>
+
+18. Which of the following NAT technologies are source NAT technologies?
+
+    A. NAT No-PAT  
+    B. NAPT  
+    C. Easy IP  
+    D. NAT Server
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** ABC
+
+    **Answer Analysis:**  
+    No-Port Address Translation (NAT No-PAT) translates only addresses and does not translate ports. In this way, one-to-one private address and one-to-one public address are translated. Easy IP: The implementation principle of Easy IP is the same as that of NAPT. Easy IP translates IP addresses and transport-layer ports at the same time. The only difference is that Easy IP does not have the concept of address pool and uses the public IP address of the outbound interface as the translated address.
+    </details>
+
+19. Common NAT translates not only the network layer and transport layer information, but also the IP address and port number carried in the application layer.
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    NAT ALG is an application-level gateway (ALG) proxy that translates the IP address and port number carried in the application-layer data.
+    </details>
+
+20. Which of the following protocols is used to dynamically backup the status data and key configuration commands between the two firewalls?
+
+    A. HRP  
+    B. VRRP  
+    C. VGMP  
+    D. IGMP
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** A
+
+    **Answer Analysis:**  
+    The HRP protocol is used to dynamically back up the status data and key configuration commands between the two firewalls. The backup contents include configuration backup and status information.
+    </details>
+
+21. Which of the following states are the status of the firewall heartbeat interface?
+
+    A. Invalid  
+    B. Down  
+    C. Running  
+    D. Full
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** ABC
+
+    **Answer Analysis:**  
+    An HRP heartbeat interface has five states: Invalid, Down, Peerdown, Ready, and Running. The states listed as answers are among the possible statuses.
+    </details>
+
+22. A VGMP management group controls the switchover of all VRRP backup groups. After a VRRP backup group is added to the VGMP management group, the status of the VRRP backup group can be switched separately.
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    Multiple VRRP backup groups on the same firewall are added to a VGMP management group. The VGMP management group manages the status of all VRRP backup groups in a unified manner, ensuring that the status of all VRRP backup groups in the VGMP management group is the same.
+    </details>
+
+23. The VGMP group status of the firewall is classified into two roles: master (active) and backup (backup).
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    The VGMP group status of the firewall can be Load-balance, Active, or Standby.
+    </details>
+
+24. Which of the following is not a predefined signature action?
+
+    A. Release  
+    B. Alarm  
+    C. Block  
+    D. Tips
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** A
+
+    **Answer Analysis:**  
+    - **Permit:** Indicates that the packets matching the signatures are allowed through and no logs are recorded.
+    - **Alarm:** Indicates that the system permits the packets matching the signature but records logs.
+    - **Block:** The system discards the packets matching the signature, blocks the data flow of the packets, and records logs.
+    </details>
