@@ -346,3 +346,295 @@
     - **Alarm:** Indicates that the system permits the packets matching the signature but records logs.
     - **Block:** The system discards the packets matching the signature, blocks the data flow of the packets, and records logs.
     </details>
+
+25. Which of the following is the correct process for implementing the intrusion prevention mechanism?
+
+    A. Protocol identification -> Application data reassembly -> Feature matching -> Response processing  
+    B. Reassembly of application data -> Protocol identification -> Feature matching -> Response processing  
+    C. Reassembly of application data -> Feature matching -> Protocol identification -> Response processing  
+    D. Feature matching -> Application data reassembly -> Protocol identification -> Response processing
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+
+    **Answer Analysis:**  
+    The firewall first reassembles IP fragments and TCP flows. After identifying the protocol of the packet, the firewall performs refined analysis based on the specific protocol analysis solution, extracts packet features, and matches the parsed packet features with signatures. If the packet features match the signatures, the firewall responds to the packets.
+    </details>
+
+26. Which of the following are filtering conditions of the signature filter?
+
+    A. Category  
+    B. Object  
+    C. Protocol  
+    D. Operating system
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** ABCD
+
+    **Answer Analysis:**  
+    The filtering conditions of the signature filter include the signature type, object, protocol, severity, and operating system. Only the signatures that meet all filtering conditions can be added to the signature filter.
+    </details>
+
+27. Firewall intrusion prevention analysis analyzes network traffic to detect intrusions (including buffer overflow attacks, Trojan horses, and worms), and stop intrusions in real time through certain response methods to protect enterprise information systems and network architectures from intrusion.
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    Firewall intrusion prevention provides anti-worm, virus, Trojan horse, botnet, spyware, adware, CGI, cross-site scripting, injection, directory traversal, information leakage, remote file inclusion, overflow, code execution, DoS, and scanning tools, and other attack defense measures to protect network security in an all-round way.
+    </details>
+
+29. Which of the following is NOT an AAA?
+
+    A. Certification  
+    B. Authorization  
+    C. Statistics  
+    D. Charging  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** C
+
+    **Answer Analysis:**  
+    Authentication, Authorization, and Accounting (AAA) are short for Authentication, Authorization, and Accounting. AAA is a management mechanism for network security. It provides authentication, authorization, and accounting functions.
+    </details>
+
+30. If the traffic passing through the firewall matches the authentication policy, which of the following actions will be triggered?
+
+    A. Session authentication  
+    B. Pre-authentication  
+    C. Authentication exemption  
+    D. SSO  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** ABCD
+    </details>
+
+31. The system has a default authentication domain. Each user group can contain only one user and user group.
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    By default, the system has a default authentication domain. Each user group can contain multiple users and user groups. Each user group can belong to only one parent user group, and each user can belong to at least one or more user groups.
+    </details>
+
+32. A user is the main body that accesses network resources. To ensure the security of network resources, proper authentication and authorization should be performed on the user.
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+    
+    **Answer Analysis:**  
+    Information security incidents occur frequently. Most of them are caused by weak security awareness or misoperations of internal users and administrators. Improper permission management expands the impact scope of security incidents and deepens system damage.
+    </details>
+
+33. Which of the following is not a symmetric encryption/decryption algorithm?
+
+    A. DES  
+    B. AES  
+    C. DH  
+    D. SM1  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** C
+
+    **Answer Analysis:**  
+    The Diffie-Hellman (DH) asymmetric encryption and decryption algorithm is especially important in IPSec and is used to solve the key exchange problem. The same key cannot be used for a long time. To ensure sufficient security, the key needs to be obtained dynamically at both ends.
+    </details>
+
+34. Which of the following options are the characteristics of a Hash algorithm?
+
+    A. Fast forward  
+    B. Irreversible  
+    C. Input sensitivity  
+    D. Collision resistance  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** ABCD
+
+    **Answer Analysis:**  
+    - **Fast forward:** Given the plaintext and hash algorithm, the hash value is calculated in a limited time and resources.  
+    - **Irreversible:** Given any hash value, it is difficult to deduce the plaintext in a finite time.  
+    - **Input sensitivity:** If the input data is slightly modified, the output hash value changes significantly.  
+    - **Collision resistance:** If different data is input, the output hash values cannot be the same. For a given data block, it is extremely difficult to find a data block with the same hash value.
+    </details>
+
+35. Asymmetric encryption algorithm has high efficiency, simple algorithm, low system overhead, and is suitable for encrypting a large amount of data.
+
+    - Right  
+    - Wrong  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    Asymmetric encryption algorithms are complex, take a long time to encrypt a large amount of data, and result in long encrypted packets, which is not conducive to network transmission.
+    </details>
+
+36. Which of the following information is not contained in a digital certificate?
+
+    A. Public key of the certificate owner  
+    B. Private key of the certificate owner  
+    C. Identity information  
+    D. Validity period of the certificate  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+
+    **Answer Analysis:**  
+    The private key of the owner is stored by itself and is not transmitted over the network.
+    </details>
+
+37. Which of the following are the components of a PKI system?
+
+    A. End Entity  
+    B. Certificate Authority  
+    C. Certificate Registration Authority  
+    D. Certificate/CRL repository  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** ABCD
+
+    **Answer Analysis:**  
+    The components of a PKI (Public Key Infrastructure) system include the End Entity, Certificate Authority, Certificate Registration Authority, and Certificate/CRL repository.
+    </details>
+
+38. A digital fingerprint refers to the data obtained after the sender uses its private key to encrypt the digital fingerprint.
+
+    Right  
+    Wrong  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    A digital fingerprint, also called an information digest, refers to the data obtained after the sender uses a hash algorithm to calculate the plaintext information. The sender then sends both the digital fingerprint and the plaintext to the receiver. The receiver uses the same hash algorithm to generate a fingerprint from the plaintext and compares it with the received digital fingerprint. If they match, the receiver can determine that the plaintext information has not been tampered with.
+    </details>
+
+39. Which of the following VPN technologies is a Layer 2 VPN?
+
+    A. GRE  
+    B. L2TP  
+    C. IPSec  
+    D. SSL  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+
+    **Answer Analysis:**  
+    L2TP (Layer 2 Tunneling Protocol) operates at Layer 2 of the OSI model. It provides a framework for creating a virtual private network (VPN) by encapsulating data within a tunnel at the data link layer. This is in contrast to protocols like GRE (Generic Routing Encapsulation), IPSec (Internet Protocol Security), and SSL (Secure Sockets Layer), which operate at higher layers of the OSI model.
+    </details>
+
+40. How many messages need to be exchanged during pre-shared key negotiation in aggressive mode in IKEv1 phase 1 negotiation?
+
+    A. 2  
+    B. 3  
+    C. 4  
+    D. 5  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+
+    **Answer Analysis:**  
+    In aggressive mode, three messages need to be exchanged:
+    - Message 1: Exchanging SA payload, keying material, and identity information.
+    - Message 2: Adding a hash authentication payload when exchanging the content of message 1.
+    - Message 3: The responder's authentication of the initiator.
+    </details>
+
+41. Which of the following are SSL VPN service types?
+
+    A. Web proxy  
+    B. File sharing  
+    C. Port forwarding  
+    D. Network extension  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** ABCD
+
+    **Answer Analysis:**  
+    - **Web proxy:** Used when mobile users access intranet web resources.
+    - **File sharing:** Utilized when mobile users access the intranet file server.
+    - **Port forwarding:** Used for mobile users to access intranet TCP resources.
+    - **Network extension:** Allows mobile office users to access intranet IP resources.
+    </details>
+
+42. VPN is a virtual private network, which is used to build a private and private virtual network on a public network and transmit private network traffic over the virtual network.
+
+    Right  
+    Wrong  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    A VPN (Virtual Private Network) creates a secure and encrypted connection over a public network, effectively dividing the existing physical network into logically isolated networks. It provides a secure method to transmit private network traffic without altering the network status.
+    </details>
+
+43. VPN encapsulates and encrypts data. Even if hackers steal data, data cannot be cracked, ensuring data security. In addition, VPN construction does not need to change the existing network topology and does not require additional costs.
+
+    Right  
+    Wrong  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    While VPNs do provide encapsulation and encryption to secure data during transmission, they cannot guarantee that data will never be cracked if intercepted. Additionally, while VPNs offer security, reliability, and flexibility, they often require changes to network configurations and may involve additional costs for implementation and maintenance.
+    </details>
+
+44. Which of the following is not a predefined signature action?
+
+    A. Release  
+    B. Alarm  
+    C. Block  
+    D. Tips
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** A
+
+    **Answer Analysis:**  
+    - **Permit:** Indicates that the packets matching the signatures are allowed through and no logs are recorded.
+    - **Alarm:** Indicates that the system permits the packets matching the signature but records logs.
+    - **Block:** The system discards the packets matching the signature, blocks the data flow of the packets, and records logs.
+    </details>
+
+45. Common NAT translates not only the network layer and transport layer information, but also the IP address and port number carried in the application layer.
+
+    - Right
+    - Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+
+    **Answer Analysis:**  
+    NAT ALG is an application-level gateway (ALG) proxy that translates the IP address and port number carried in the application-layer data.
+    </details>
