@@ -626,7 +626,8 @@
     - **Block:** The system discards the packets matching the signature, blocks the data flow of the packets, and records logs.
     </details>
 
-45. Common NAT translates not only the network layer and transport layer information, but also the IP address and port number carried in the application layer.
+45. Common NAT translates not only the network layer and transport layer information, but also the IP 
+    address and port number carried in the application layer.
 
     - Right
     - Wrong
