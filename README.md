@@ -1,5 +1,5 @@
 
-![My Banner](img/my-banner.jpeg)
+![My Banner](img/banner.jpeg)
 
 Here are some the resourses I found helpull in my certification adventure.
 
