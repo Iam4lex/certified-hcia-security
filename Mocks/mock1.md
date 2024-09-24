@@ -1,3 +1,5 @@
+## Quezes in the portal.
+
 1. Which of the following is the correct sequence of the ransomware attack process?
 
     A. Intrusion -> Proliferation -> Theft -> Ransom  
