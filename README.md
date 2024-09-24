@@ -1,3 +1,6 @@
+
+![My Banner](img/my-banner.jpeg)
+
 Here are some the resourses I found helpull in my certification adventure.
 
 | Name                                         | Description                              | Links                                                   |
