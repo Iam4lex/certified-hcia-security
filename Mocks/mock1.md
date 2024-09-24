@@ -390,7 +390,7 @@
     Firewall intrusion prevention provides anti-worm, virus, Trojan horse, botnet, spyware, adware, CGI, cross-site scripting, injection, directory traversal, information leakage, remote file inclusion, overflow, code execution, DoS, and scanning tools, and other attack defense measures to protect network security in an all-round way.
     </details>
 
-29. Which of the following is NOT an AAA?
+28. Which of the following is NOT an AAA?
 
     A. Certification  
     B. Authorization  
@@ -404,6 +404,21 @@
     **Answer Analysis:**  
     Authentication, Authorization, and Accounting (AAA) are short for Authentication, Authorization, and Accounting. AAA is a management mechanism for network security. It provides authentication, authorization, and accounting functions.
     </details>
+
+29. VPN encapsulates and encrypts data. Even if hackers steal data, data cannot be cracked, ensuring data security. In addition, VPN construction does not need to change the existing network topology and does not require additional costs.
+
+    Right  
+    Wrong
+
+<details>
+<summary>Show Answer</summary>
+**Correct answer:** Wrong
+
+**Answer Analysis:**  
+- While a VPN does ensure security, reliability, and manageability, it also provides greater scalability and flexibility.  
+- A VPN can be utilized globally as long as Internet access is available, but the construction may incur additional costs and considerations regarding network topology.
+</details>
+
 
 30. If the traffic passing through the firewall matches the authentication policy, which of the following actions will be triggered?
 
@@ -626,16 +641,253 @@
     - **Block:** The system discards the packets matching the signature, blocks the data flow of the packets, and records logs.
     </details>
 
-45. Common NAT translates not only the network layer and transport layer information, but also the IP 
-    address and port number carried in the application layer.
+45. Which of the following is the correct process for implementing the intrusion prevention mechanism?
 
-    - Right
-    - Wrong
+    A. Protocol identification -> Application data reassembly -> Feature matching -> Response processing  
+    B. Reassembly of application data -> Protocol identification -> Feature matching -> Response processing  
+    C. Reassembly of application data -> Feature matching -> Protocol identification -> Response processing  
+    D. Feature matching -> Application data reassembly -> Protocol identification -> Response processing
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+    
+    **Answer Analysis:**  
+    - The firewall first reassembles IP fragments and TCP flows.
+    - After identifying the protocol of the packet, the firewall performs refined analysis based on the specific protocol analysis solution.
+    - It extracts packet features and matches the parsed packet features with signatures.
+    - If the packet features match the signatures, the firewall responds to the packets.
+    </details>
+
+46. Which of the following are filtering conditions of the signature filter? 
+
+    A. Category  
+    B. Object  
+    C. Protocol  
+    ✔ D. Operating system
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** A, B, C, D
+    
+    **Answer Analysis:**  
+    - The filtering conditions of the signature filter include the signature type, object, protocol, severity, and operating system. 
+    - Only the signatures that meet all filtering conditions can be added to the signature filter.
+    </details>
+
+47. Firewall intrusion prevention analysis analyzes network traffic to detect intrusions (including buffer overflow attacks, Trojan horses, and worms) and stops intrusions in real-time through certain response methods to protect enterprise information systems and network architectures from intrusion.
+
+    Right  
+    Wrong
 
     <details>
     <summary>Show Answer</summary>
     **Correct answer:** Wrong
-
+    
     **Answer Analysis:**  
-    NAT ALG is an application-level gateway (ALG) proxy that translates the IP address and port number carried in the application-layer data.
+    - Firewall intrusion prevention provides a comprehensive set of defense measures. These include anti-worm, virus, Trojan horse, botnet, spyware, adware, CGI, cross-site scripting, injection, directory traversal, information leakage, remote file inclusion, overflow, code execution, DoS, scanning tools, and other attack defense mechanisms to protect network security.
     </details>
+48. Which of the following is NOT an AAA?
+
+    A. Certification  
+    B. Authorization  
+    C. Statistics  
+    D. Charging
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** C
+    
+    **Answer Analysis:**  
+    - Authentication, Authorization, and Accounting (AAA) is a network security management mechanism.
+    - It provides three key functions: Authentication, Authorization, and Accounting.
+    </details>
+
+49. If the traffic passing through the firewall matches the authentication policy, which of the following actions will be triggered?
+
+    A. Session authentication  
+    B. Pre-authentication  
+    C. Authentication exemption  
+    D. SSO
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** A, B, C, D
+    
+    **Answer Analysis:**  
+    - **Session authentication:** When a user accesses an HTTP service, if the data flow matches the authentication policy, the firewall pushes an authentication page to request the user to perform authentication.
+    - **Pre-authentication:** For non-HTTP services, users must access the authentication page for authentication; otherwise, service data flows matching the authentication policy will be blocked by the firewall.
+    </details>
+
+50. The system has a default authentication domain. Each user group can contain only one user and user group.
+
+    Right  
+    Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+    
+    **Answer Analysis:**  
+    - By default, the system has a default authentication domain.  
+    - Each user group can contain multiple users and user groups.  
+    - Each user group can belong to only one parent user group.  
+    - Each user can belong to at least one or more user groups.
+    </details>
+
+51. A user is the main body that accesses network resources. To ensure the security of network resources, proper authentication and authorization should be performed on the user.
+
+    Right  
+    Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+    
+    **Answer Analysis:**  
+    - Information security incidents often result from weak security awareness or misoperations by internal users and administrators.  
+    - Improper permission management can expand the scope and impact of security incidents, leading to deeper system damage.
+    </details>
+
+52. Which of the following is not a symmetric encryption/decryption algorithm?
+
+    A. DES  
+    B. AES  
+    C. DH  
+    D. SM1
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** C
+    
+    **Answer Analysis:**  
+    - The Diffie-Hellman (DH) algorithm is an asymmetric encryption and decryption algorithm, crucial in IPSec for solving the key exchange problem.  
+    - Since the same key cannot be used for an extended period, it is essential to obtain the key dynamically at both ends to ensure adequate security.
+    </details>
+
+53. Which of the following options are the characteristics of a Hash algorithm?
+
+    A. Fast forward  
+    B. Irreversible  
+    C. Input sensitivity  
+    D. Collision resistance  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** A, B, C, D
+    
+    **Answer Analysis:**  
+    - **Fast forward:** Given the plaintext and hash algorithm, the hash value is calculated in a limited time and with limited resources.  
+    - **Irreversible:** It is difficult to deduce the plaintext from any hash value in finite time.  
+    - **Input sensitivity:** A slight modification to the input data results in a significant change in the output hash value.  
+    - **Collision resistance:** Different inputs should produce different hash values, and it is extremely difficult to find two different data blocks that yield the same hash value.
+    </details>
+
+54. Asymmetric encryption algorithm has high efficiency, simple algorithm, low system overhead, and is suitable for encrypting a large amount of data.
+
+    Right  
+    Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+    
+    **Answer Analysis:**  
+    - Asymmetric encryption algorithms are complex and take a long time to encrypt large amounts of data.  
+    - Additionally, the encrypted packets tend to be lengthy, which is not conducive to efficient network transmission.
+    </details>
+
+55. Which of the following information is not contained in a digital certificate?
+
+    A. Public key of the certificate owner  
+    B. Private key of the certificate owner  
+    C. Identity information  
+    D. Validity period of the certificate  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+    
+    **Answer Analysis:**  
+    - The private key of the certificate owner is stored securely by the owner and is not transmitted over the network.  
+    - A digital certificate contains the public key, identity information, and the validity period of the certificate.
+    </details>
+
+56. Which of the following are the components of a PKI system?
+
+    A. End Entity  
+    B. Certificate Authority  
+    C. Certificate Registration Authority  
+    D. Certificate/CRL repository  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** A, B, C, D
+    
+    **Answer Analysis:**  
+    - **End Entity (EE):** Also known as a PKI entity, it is the end user of PKI products or services. This can include individuals, organizations, devices (such as routers or firewalls), or processes running on a computer.  
+    - **Certificate Authority (CA):** The CA serves as the trust basis of the PKI, acting as a trusted entity to issue and manage digital certificates.  
+    - **Certificate Registration Authority (RA):** The RA functions as the user-facing interface for the CA, handling certificate registration and revocation applications. It verifies users' identity information and decides whether to submit applications for certificate issuance to the CA.  
+    - **Certificate/CRL Repository:** This is where issued certificates and Certificate Revocation Lists (CRLs) are stored and made available for verification.
+    </details>
+
+57. A digital fingerprint refers to the data obtained after the sender uses its private key to encrypt the digital fingerprint.
+
+    Right  
+    Wrong
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** Wrong
+    
+    **Answer Analysis:**  
+    - A digital fingerprint, also known as an information digest, is the data obtained after the sender uses a hash algorithm to calculate the plaintext information.  
+    - When using the digital fingerprint, the sender transmits both the digital fingerprint and plaintext to the receiver. The receiver then applies the same hash algorithm to match the data fingerprint generated from the plaintext with the received digital fingerprint. If they match, the receiver can confirm that the plaintext information has not been tampered with.
+    </details>
+
+
+58. Which of the following VPN technologies is a Layer 2 VPN?
+
+    A. GRE  
+    B. L2TP  
+    C. IPSec  
+    D. SSL  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+    
+    **Answer Analysis:**  
+    - L2TP (Layer 2 Tunneling Protocol) is a Layer 2 VPN technology that relies on the authentication provided by the Point-to-Point Protocol (PPP).  
+    - Access users can be authenticated locally or through a third-party RADIUS server. Once authentication is successful, an internal IP address is allocated to the users, allowing for their authorization and management based on that IP address.
+    </details>
+
+59. How many messages need to be exchanged during pre-shared key negotiation in aggressive mode in IKEv1 phase 1 negotiation?
+
+    A. 2  
+    B. 3  
+    C. 4  
+    D. 5  
+
+    <details>
+    <summary>Show Answer</summary>
+    **Correct answer:** B
+    
+    **Answer Analysis:**  
+    - In aggressive mode, three messages are exchanged during the pre-shared key negotiation:  
+      - **Message 1:** Exchanges SA payload, keying material, and identity information.  
+      - **Message 2:** Adds a hash authentication payload when exchanging the content of Message 1.  
+      - **Message 3:** Involves the responder's authentication of the initiator.
+    </details>
+60. VPN is a virtual private network, which is used to build a private and private virtual network on a public network and transmit private network traffic over the virtual network.
+
+    Right  
+    Wrong
+
+<details>
+<summary>Show Answer</summary>
+**Correct answer:** Wrong
+
+**Answer Analysis:**  
+- A VPN creates logically isolated networks within an existing physical network to enable secure and reliable connections without altering the overall network structure.
+</details>
