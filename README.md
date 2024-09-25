@@ -11,5 +11,5 @@ Here are some the resourses I found helpull in my certification adventure.
 | HCIA Security Certification Exam Dumps       | Latest exam dumps and practice exams | [HCIA Security Certification Exam Dumps](https://www.pass4sure.com/) |
 
 ## Mocks 
-[Chapter 1](https://github.com/iamalexmwangi/hcia-certified/blob/main/Mocks/mock1.md)
+[Chapter 1](https://github.com/iamalexmwangi/hcia-certified/blob/main/Mocks/mock1.md) <br/>
 [Chapter 2](https://github.com/iamalexmwangi/hcia-certified/blob/main/Mocks/mock2.md)
