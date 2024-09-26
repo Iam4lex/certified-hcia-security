@@ -1,4 +1,4 @@
-## Final exam in the portal.
+## Final exam in the portal
 
 1. When firewalls are deployed in hot standby mode, which of the following protocols is used to switch the status of the entire VRRP group?
 
