@@ -666,7 +666,7 @@
     A. Category  
     B. Object  
     C. Protocol  
-    ✔ D. Operating system
+    D. Operating system
 
     <details>
     <summary>Show Answer</summary>
