@@ -10,6 +10,8 @@
 </div>
 <br>
 
+---
+
 | Name                                         | Description                              | Links                                                   |
 |----------------------------------------------|------------------------------------------|---------------------------------------------------------|
 | **Huawei HCIA Security V3.0 Study Guide**    | Comprehensive study guide for HCIA Security certification | [Huawei HCIA Security V3.0 Study Guide](https://e.huawei.com/en/talent/#/certification/detail/!certificatedetail?certificationId=168&subCertificationId=271) |
